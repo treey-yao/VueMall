@@ -3,13 +3,21 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { Button, Row, Col } from 'vant'
+import { Swipe, SwipeItem } from 'vant';
+import { Lazyload } from 'vant';
+
+Vue.use(Button).use(Row).use(Col)
+Vue.use(Swipe).use(SwipeItem) //Swipe 轮播
+Vue.use(Lazyload)
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+    el: '#app',
+    router,
+    components: { App },
+    template: '<App/>'
 })

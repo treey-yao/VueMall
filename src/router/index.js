@@ -1,15 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import ShoppingMall from '@/components/pages/ShoppingMall' //首页
 
 Vue.use(Router)
-
+    //vue 路由
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+    mode: 'history',
+    routes: [{
+        path: '/',
+        name: 'ShoppingMall',
+        component: ShoppingMall
+    }]
 })

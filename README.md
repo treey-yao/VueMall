@@ -11,6 +11,7 @@ Vue+Vuex+Router+Vant+Node+Koa2+Mongoose+MongoDB
 ## 更新记录
 
 1. 2018/05/16 开坑
+1. 2018/05/18 了解Vant， 页面布局
 
 
 
@@ -18,6 +19,15 @@ Vue+Vuex+Router+Vant+Node+Koa2+Mongoose+MongoDB
 
 #### 1. 2018/05/16
 开坑，动手这个项目， 搭建环境。 本项目是用 vue + koa2 开发所以我用的vue的脚手架Vue-cli。  
+
+#### 1. 2018/05/18
+安装Vant，了解Vant的基本操作。一下是注意事项：
+1. 在下载了Vant后，不建议全局，而使用 ` babel-plugin-import ` 安装。用那个模块装那个模块，这个会减少打包的大小，首页加载的时候会快一些。
+
+2. Vant中 `swipe lazy ` 懒加载的bug 。在使用线上图片中网速过慢，图片默认高度太高导致页面错位，需要在外部的盒子中设置最大高度
+
+ps：VScode中 ` Vue VSCode Snippets `插件挺好用的
+
 
 
 
